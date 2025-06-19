@@ -1,0 +1,18 @@
+select {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid gray;
+  outline: none;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+
+select:focus {
+  content: '';
+  border-color: black;
+}
+
+option {
+  background: none;
+}

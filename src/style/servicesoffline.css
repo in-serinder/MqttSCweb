@@ -1,0 +1,38 @@
+.servicesoffline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  padding-bottom: 20px;
+  padding-bottom: 20px;
+
+  background-color: #fff;
+}
+
+.servicesoffline a {
+  color: #0088cc;
+}
+
+.servicesoffline h3 {
+  margin: 5px;
+}
+
+.servicesoffline_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesoffline_options_option {
+  display: flex;
+  height: 20px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.servicesoffline_options_option button {
+  margin-left: 5px;
+  flex-grow: 1;
+}

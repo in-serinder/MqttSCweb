@@ -1,0 +1,33 @@
+input {
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid gray;
+  transition:
+    width 0.5s ease,
+    left 0.3s ease;
+}
+
+input:focus {
+  content: '';
+  border-color: black;
+}
+
+input:focus::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0; /* 在底部位置 */
+  width: 0;
+  height: 2px; /* 底边框高度 */
+  background-color: black; /* 动画颜色 */
+  transition:
+    width 0.3s ease,
+    left 0.3s ease; /* 过渡效果 */
+}
+
+input:focus::after {
+  width: 100%; /* 点击时展开到100% */
+  left: 0; /* 从中间展开 */
+}

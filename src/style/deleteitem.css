@@ -1,0 +1,40 @@
+.deleteitem {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  height: 40%;
+}
+.deleteitem_title {
+  align-items: center;
+  /* font-size: 0.62em; */
+  text-align: center;
+}
+.deleteitem_title h6 {
+  margin: 5px;
+}
+
+.deleteitem_content {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.32em;
+  font-weight: bold;
+  margin-left: 10px;
+  /* text-align: center; */
+  flex-grow: 1;
+}
+
+.deleteitem_content span {
+  margin-bottom: 5px;
+}
+
+.deleteitem_footer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 30px;
+  padding: 5px;
+}
+
+.deleteitem_footer button {
+  margin-right: 5px;
+}

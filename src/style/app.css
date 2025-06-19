@@ -1,0 +1,102 @@
+.top {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 50px;
+  background-color: #0088cc;
+  border-bottom: 2px solid #fff;
+}
+
+.topMenu {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.topMenu.RouterLink {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  font-size: 0.4em;
+  height: 100%;
+  color: #fff;
+  text-decoration-color: #00e625;
+}
+
+.topMenu.RouterLink img {
+  margin-right: 5px;
+  height: 25px;
+  width: 25px;
+}
+
+.top_Menudiv {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.TopMain {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  color: white;
+  /* background-color: black; */
+}
+
+.TopMain.RouterLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.TopMain.RouterLink img {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.top_title_home {
+  font-size: 0.42em;
+}
+
+.top_Menudiv h1 {
+  align-items: center;
+}
+
+.centent {
+  display: flex;
+  flex-grow: 1;
+  z-index: 1;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_routerview {
+  width: 90%;
+  height: 100%;
+}
+
+.router_islink {
+  color: #00e625;
+}
+
+.server_offline_cover {
+  position: absolute;
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+
+  background-color: rgb(0, 0, 0, 0.3);
+  /* filter: blur(10px); */
+  /* filter: blur(px) grayscale(50%) brightness(80%); */
+}

@@ -1,0 +1,96 @@
+.listviewitem {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  /* border-bottom: 4px solid #ffa600; */
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.listviewitem button {
+  height: 100%;
+  background-color: transparent;
+}
+
+/* 动画 */
+
+.listviewitem::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffa600;
+  /* transform: translateX(-50%); */
+  transition: all 0.8s ease-in-out;
+}
+
+.listviewitem::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 3px;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  background-color: #33aadd;
+  transform: translateX(50%);
+  transition: all 0.8s ease-in-out;
+}
+
+.listviewitem:hover::after {
+  width: 50%;
+}
+
+.listviewitem:hover::before {
+  width: 100%;
+}
+
+.listviewitem div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.listviewitem div img {
+  height: 60%;
+  margin-left: 20px;
+}
+
+.listviewitem_title {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+
+  font-size: 0.42em;
+  /* border: #ffa600 solid 2px; */
+}
+
+.listviewitem_title.right {
+  justify-content: right;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+  /* border: 2px solid yellow; */
+}
+
+.listviewitem_title.right.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.listviewitem_title.right img {
+  margin-right: 5px;
+  width: 40px;
+}
